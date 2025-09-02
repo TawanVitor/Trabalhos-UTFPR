@@ -1,0 +1,13 @@
+void main() {
+  // Declaração das variáveis
+  double precoProduto = 49.99; // Preço do produto
+  int quantidadeComprada = 3;  // Quantidade comprada
+
+  // Cálculo do valor total
+  double valorTotal = precoProduto * quantidadeComprada;
+
+  // Exibição do valor total
+  print("Preço do produto: R\$ $precoProduto");
+  print("Quantidade comprada: $quantidadeComprada");
+  print("Valor total: R\$ $valorTotal");
+}
