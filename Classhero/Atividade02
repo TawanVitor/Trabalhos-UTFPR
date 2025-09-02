@@ -1,0 +1,52 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: BookDetailsScreen(),
+    );
+  }
+}
+
+class BookDetailsScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Detalhes do Livro"),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Colugi.mn(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Text(
+              'Título: O Hobbit',
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+            SizedBox(height: 8),
+            Text(
+              'Autor: J.R.R. Tolkien',
+              style: TextStyle(fontSize: 18),
+            ),
+            SizedBox(height: 8),
+            Text(
+              'Número de Páginas: 310',
+              style: TextStyle(fontSize: 18),
+            ),
+            SizedBox(height: 8),
+            Text(
+              'Disponibilidade: Em estoque',
+              style: TextStyle(fontSize: 18, color: Colors.green),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
